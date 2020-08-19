@@ -44,6 +44,7 @@ public class TestController {
     @RequestMapping("upload")
     public String upload(@RequestParam("file") MultipartFile file, Model model) {
         // 获取上传文件名
+        System.out.println(13215);
         String filename = file.getOriginalFilename();
         // 定义上传文件保存路径
         String path = filePath+"rotPhoto/";
